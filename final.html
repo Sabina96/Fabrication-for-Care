@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Fabrication for Care</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">Fabrication<span class="logo_colour">for Care</span></a></h1>
+                    <h2>Sabina Alijagic</h2
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li><a href="home.html">Home</a></li>
+                     <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="index.html">Assingments</a></li>
+                    
+        
+                <li class="selected"><a href="final.html">Final Project</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content_header"></div>
+        <div id="site_content">
+            <div id="content">
+                <!-- insert the page content here -->
+
+                <h1>Soft Robotic Glove</h1>
+
+                <h2>Abstract</h2>
+
+                <p>
+                    Soft Robotics can be understood as a discipline within the field of Robotics which aims to imitate robotic-like movement in soft and elastic materials.<br> One interesting and at the same time promising applications of Soft Robotics is in the creation of assistive devices designed for people presenting motor disabilities and physical incapabilities, such as muscular dystrophy and spinal cord injuries.<br>
+                    By measuring contraction and relaxation values of the arm muscles via a MYO sensor and the creation and implementation of human-like soft robotic fingers, a wearable solution based on a glove concept to assist the motor function of the fingers and enable proper grabbing, grasping and picking of objects was to be achieved.<br></p>
+
+                    <div class="row">
+                        <div class="column">
+                            <img src="fl%20(7).jpg" alt="screenshot3" style="width="250"; height=250">
+                        </div><br>
+                    </div>
+
+                  <p>  The Soft Robotic glove is not aimed at those patients lacking complete motor capabilities, but rather at those experiencing considerably reduced movement and as an interdisciplinary project, it combines knowledge of the fields of 3D-Design with Soft-Robotics and Electronics.<br>
+                    For the creation of our glove, references from existing sources of the field of assistive technologies were considered. Among others, the Soft Robotic Toolkit, a Harvard University platform for information exchange on the design, modeling and control of soft robotic devices served as an important base for the elaboration of our concept.<br>
+                    As a prototype, our Soft Robotic Glove doesn't exclude any possible changes in the setting, functionality and/or materials used for every component used. Especially the cotton material would need to be replaced by a harder and tighter one to guarantee more stability and weight resistance against the electronic components,<br> Recommendable for future related projects is also the introduction of a technique to reduce the probability of creating many defective soft robotic fingers, since this was an important time-consuming part of the project..<br>
+                </p>
+
+                <h1>Step by Step</h1>
+
+                <h2> Part 1: The Arduino board and the sensor</h2>
+                <p>The arduino board is the device brain, it's how you will control the motor, the actuator and the inflation of the soft robotics.<br>
+                    The arduino board is connected to a Myosensor that will use the person's muslce movment in order to trigger the motor<br>
+                    In the begining we used an Arduino Uno board and a motor that needs 9 V which we used a battery case with 6*1.5V AA batteries to supply it with the required voltage as you can see in the following picture<br></p>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="f%20(3).jpg" alt="screenshot3" style= width="250"; height="250";>
+                    </div><br>
+                </div>
+
+                <p>After we tested it and make sure it works from the techincal side, we found out the it's not really convient in terms of the size. <br>
+                    That's Why we changed the board to Arduino mini board, and a small motor that can work using only 3 Volts whihc will allow us to use a smaller battry to supply it with power.
+                </p>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="fl%20(4).jpg" width="250"; height="250";/>
+                    </div>
+
+                </div>
+
+                <p>As you can see now the size is more convient now and can be implemented over the glove, and the mini board can perform the same functionality as the Uno Board.<br>
+                    This the code that we have used for the Arduino board<br>
+                </p>
+                <div class="row">
+                    <div class="column">
+                        <img src="Arduino.PNG" width="500";height="500";/>
+                    </div>
+
+                </div>
+
+
+
+                <h2>Part 2: The Soft Robotic Fingers</h2>
+                <p>The process of making the fingers is split up into several steps. First it has to be decided about the form and and length of the fingers.<br> These models are created in a program called Fusion 360°. After this step the models of the finger can be printed in a 3D printer.<br> For this part of work the file has to be in stl transformed in Exact Flat which then can be put on a SD Card and is ready to print. My ptinting took always 3 hours. After cooling down I took the pieces and started to cast the eco flex into them.<br> This material is silicon which forms the fingers. Part A and B from the silicon has to be evenly mixed together and gently poured into the modles. <br> They can be put into the oven now and let there for half an hour so they are completely firm. After being dry the fingers are ready to be carefully pulled out.<br> The other side of the finger is made by another layer of the silicon so it is isolated in order the air can move through the chambers which creates the inflation.<br> Due to wrong mixtures or harsh movements a lot of these models broke and work in the end or had wholes in it. We tried to improve and be more precise and careful but only teo of them really worked.<br> Still they could not completely perform the wished movement or enough pressure is not been created so that the person's finger is really moved by being inflated.<br> After the fingers are done they are inserted into the pockets of the glove and are connected to the pump and sensor which enables it's movement.</p>
+
+                <div class="row">
+
+                    <div class="column">
+                        <img src="Prs%20(5).jpg" width="250";height="250";/>
+                    </div>
+
+                    <div class="column">
+                        <img src="s%20(9).JPG" width="250";height= "250";/>
+                    </div>
+
+                    <div class="column">
+                        <img src="s%20(11).JPG" width="250";height= "250";/>
+                    </div>
+
+                    <div class="column">
+                        <img src="fl%20(2).jpg" width="250";height= "250";/>
+                    </div>
+
+                    <div class="column">
+                        <img src="fl%20(19).jpg" width="250";height= "250";/>
+                    </div>
+                </div>
+
+                <h2>Part 3: The Glove</h2>
+                <p>The glove is where all the parts will be connected together, The pattern bases on the vector image of a hand that we had previously found online. The file was in SVG-format already, so no further vectoring was needed on Illustrator (the program could already read the file) to adjust dimensions or permorm any other changes to the file.<br></p>
+                <div class="row">
+                    <div class="column">
+                        <img src="ha%20(1).PNG" width="250";height= "250";/>
+                    </div>
+                </div>
+
+                <p>Import of the Hand-picture in Adobe Illustrator and Ajustment of the hand measures.<br>
+                    The filling area of the hand was ignored by using the "Color"-function. For the measures, we took the size of a "standard" hand and adjusted the width of the wrist and the length and width of the fingers to be able to sew the hand comfortably and leave enough space for the fitting hand. Troubleshooting: The measures had to be changed many times to achieve this purpose. <br></p>
+
+
+                <div class="row">
+                    <div class="column">
+                        <img src="ha%20(2).PNG" width="250";height= "250";/>
+                    </div>
+                </div>
+
+                <p> 2.2 Laser-Cutter settings and First Cut<br>
+
+                    As in the lecture of the laser cutter, we had to make sure the cutting settings were correct and the cutting depth was not higher than required. <br>
+                </p>
+
+
+
+                <div class="row">
+                    <div class="column">
+                        <img src="ha%20(1).jpg" width="250";height= "250";/>
+                    </div>
+                </div>
+                <p>2.3 Sewing of the glove with the sewing machine<br>
+
+                    To allow for enough space and correct sewing, we decided to include velcro straps for both the wrist and the fingers sections (only for the three fingers supporting the soft robotic material). <br>Two small straps per finger and one bigger for the wrist were sewed with the help of the sewing machine. The idea was to be able to attach and de-attach the soft robotic to and from the straps as arbitrary as possible. </p>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="ha%20(2).jpg" width="250";height= "250";/>
+                    </div>
+                </div>
+                <P>Some needles where used in order to hold both parts of the glove together while sewing. </P>
+                <div class="row">
+                    <div class="column">
+                        <img src="ha%20(3).jpg" width="250";height= "250";/>
+                    </div>
+                </div>
+                <p>Troubleshooting: After the sewing, I realized the glove fingers were not broad enough to allow correct fitting of the patient´s fingers, even after having changed the measures many times to avoid this. For the future, it is recommendable to adjust the hand to be 4-5 times the size of a standard hand. (Wrist width: min 220 mm, Hand height: min 250 mm). </p>
+
+                <h2>Other Road Blocks</h2>
+                <p> - How the glove will start the inflation?<br>
+                    o The initial idea was to use a switch to turn it on and off that can be controlled using the other hand, but then we tried to use a Myosensor instead of the switch button and control the actuator by using the sensor output value.<br>
+                    - The air motor needs external power to be activated.<br>
+                    o First, I tried to use external adapter, it is working but it is not handy and will not be usable without connecting the adapter,<br>
+                    o We bought an external battery case that can hold 8 AA batteries which will provide 12V, that should be enough for both the motor and the sensor plus the android board itself<br>
+                    - The size of the battery case and the board is too big to be attached to the glove<br>
+                    o Change the ardunio Uno with Arduino Mini board, and the motor with a smaller one so that we only need a small 3V battery.<br>
+                </p>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="f%20(1).JPG" width="250";height= "250";/>
+                    </div>
+
+                    <div class="column">
+                        <img src="f%20(2).JPG" width="250";height= "250";/>
+                    </div>
+                </div>
+
+                <h1>The Final Product</h1>
+
+            <p>This is short video for the final device<br> </p>
+                     <video width="640" height="480" controls>
+  <source src="finalv1.mp4" type="video/mp4">
+</video> 
+                <p>If you have any problems playing the video, you can click <a href="https://drive.google.com/open?id=1ndXrEh7_BAQeiF9dDP5ge4UdctUspxBO">here</a> to watch it outside  </p>
+
+            <h2>Feedback We Received</h2>
+            <p>Important Feedback of Mr Megill: we should have also considered a control mechanism for the fingers when inflating so that itwould only inflate those chambers that we need to create the movement. Mention also that the air channels should be improved so that enough air reaches the fingers.<br> Feedback from Adriana: Why did we choose exactly those 3 fingers? Of course onlty those create the movement. We need to justify that</p>
+                
+
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+
+</html>
